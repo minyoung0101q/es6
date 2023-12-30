@@ -5,9 +5,10 @@ const emails = [
   "nico@nomad.com",
   "nico@gmail.com",
 ];
-const cleaned = [];
-emails.forEach((email) => {
-  cleaned.push(email.split("@")[0]);
-});
+
+const cleaned = emails.map((email, index) => ({
+  username: email.split("@")[0],
+  index: index, //index
+}));
 
 console.log(cleaned);
