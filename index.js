@@ -1,3 +1,4 @@
-const DEFAULT = "lalalal";
-const sayHello = (aName = DEFAULT) => "hello " + aName;
+function sayHello(element = " anon") {
+  return "Hello" + element;
+}
 console.log(sayHello());
