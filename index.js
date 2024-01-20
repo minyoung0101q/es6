@@ -1,3 +1,4 @@
-const DEFAULT = "alternative";
-const sayHello = (element = DEFAULT) => "hello " + element;
-console.log(sayHello());
+const hello = fetch("http://google.com");
+
+console.log("something");
+console.log(hello);
