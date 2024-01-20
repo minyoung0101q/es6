@@ -1,4 +1,3 @@
-function sayHello(element = " anon") {
-  return "Hello" + element;
-}
+const DEFAULT = "alternative";
+const sayHello = (element = DEFAULT) => "hello " + element;
 console.log(sayHello());
