@@ -2,7 +2,7 @@ const nico = {
   name: "Nico",
   age: 24,
   addYear: function () {
-    ++this.age;
+    this.age++;
   }
 }
 
