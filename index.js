@@ -1,4 +1,11 @@
-const hello = fetch("http://google.com");
+const amISexy = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("Yes you are!");
+  }, 3000);
+});
 
-console.log("something");
-console.log(hello);
+console.log(amISexy);
+
+setTimeout(() => {
+  console.log(amISexy);
+}, 1000);
