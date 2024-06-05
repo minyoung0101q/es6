@@ -1,11 +1,12 @@
-const amISexy = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve("Yes you are!");
-  }, 3000);
-});
+const nico = {
+  name: "Nico",
+  age: 24,
+  addYear: function () {
+    ++this.age;
+  }
+}
 
-console.log(amISexy);
-
-setTimeout(() => {
-  console.log(amISexy);
-}, 1000);
+console.log(nico); // 24
+nico.addYear();
+nico.addYear();
+console.log(nico); // 26
