@@ -1,22 +1,12 @@
-<<<<<<< HEAD
 class User {
-  constructor() {
-    this.username = "Minyoung";
+  constructor(name) {
+    this.username = name;
   }
   sayHello() {
-    console.log("Hello, I'm Minyoung.");
-=======
-const nico = {
-  name: "Nico",
-  age: 24,
-  addYear: function () {
-    ++this.age;
->>>>>>> parent of 07fb55f ( #2.2 Arrow Functions in the Real World 변경)
+    console.log(`Hello, my name is ${this.username}`);
   }
 }
 
-const sexyUser = new User();
-const uglyUser = new User();
+const sexyUser = new User("minyoung");
 
 sexyUser.sayHello();
-uglyUser.sayHello();
